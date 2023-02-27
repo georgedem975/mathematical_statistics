@@ -119,3 +119,7 @@ __Вывод в косоль__
 
 __Гистограмма__
 ![1](https://github.com/georgedem975/mathematical_statistics/blob/master/lab-1/assets/Figure_1.png)
+
+---
+
+#### <p style="text-align: center"> Задача №2. </p>
