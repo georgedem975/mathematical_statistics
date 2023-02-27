@@ -117,3 +117,5 @@ __Вывод в косоль__
 168
 ```
 
+__Гистограмма__
+![1](https://github.com/georgedem975/mathematical_statistics/blob/master/lab-1/assets/Figure_1.png)
