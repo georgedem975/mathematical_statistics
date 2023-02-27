@@ -96,3 +96,24 @@ if __name__ == '__main__':
     plt.show()
 ```
 
+__Вывод в косоль__
+```
+1825
+[[False False False ... False False False]
+ [False False False ... False False False]
+ [False False False ... False False False]
+ ...
+ [False False False ... False False False]
+ [False False False ... False False False]
+ [False False False ... False False False]]
+
+[[False  True  True ... False  True  True]
+ [False  True  True ... False  True  True]
+ [False False  True ...  True False False]
+ ...
+ [ True  True False ...  True False False]
+ [ True  True  True ...  True  True  True]
+ [ True  True False ... False  True  True]]
+168
+```
+
