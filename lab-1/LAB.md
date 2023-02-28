@@ -363,3 +363,17 @@ Name: battery_power, dtype: float64
 0.39    1067.15
 Name: battery_power, dtype: float64
 ```
+
+__Графики__
+
+<p style="text-align:center">эмпирическая функция распредаления</p>
+
+![2](https://github.com/georgedem975/mathematical_statistics/blob/master/lab-1/assets/Figure_2.png)
+
+<p style="text-align:center">гистограмма</p>
+
+![3](https://github.com/georgedem975/mathematical_statistics/blob/master/lab-1/assets/Figure_3.png)
+
+<p style="text-align:center">box-plot</p>
+
+![4](https://github.com/georgedem975/mathematical_statistics/blob/master/lab-1/assets/Figure_4.png)
