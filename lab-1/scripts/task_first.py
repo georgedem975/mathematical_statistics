@@ -2,6 +2,7 @@ import math
 import random
 import numpy as np
 import matplotlib.pyplot as plt
+import scipy.stats
 
 
 class Interval:
@@ -22,6 +23,8 @@ def Bern(p) -> bool:
 
 
 if __name__ == '__main__':
+    Z = round(list(scipy.stats.norm.interval(0.95))[1], 2)
+    print(Z)
     # находим объем выборки по формуле
     n = math.ceil(((Z**2)*p*q)/(e**2))
     # выводим объем выборки
