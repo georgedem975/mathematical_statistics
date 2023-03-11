@@ -491,7 +491,7 @@ $$[X_i \leq x ] = {\begin{equation*} \Bigl\{ \begin{aligned}
 
 ${\displaystyle \mathbb {P} (X\leqslant x_{\alpha })\leqslant \alpha }, \\
 {\displaystyle \mathbb {P} (X\geqslant x_{\alpha })\geqslant 1-\alpha .}$
-В некоторых источниках (например, в англоязычной литературе) ${\displaystyle k}$-м ${\displaystyle q}$-квантилем называется квантиль уровня ${\displaystyle k/q}, то есть {\displaystyle (k/q)}$-квантиль в предыдущих обозначениях.
+В некоторых источниках (например, в англоязычной литературе) ${\displaystyle k}$-м ${\displaystyle q}$-квантилем называется квантиль уровня ${\displaystyle k/q}$, то есть ${\displaystyle (k/q)}$-квантиль в предыдущих обозначениях.
 
 * Выборочная медиана
 
