@@ -489,8 +489,8 @@ $$[X_i \leq x ] = {\begin{equation*} \Bigl\{ \begin{aligned}
 
 Рассмотрим вероятностное пространство ${\displaystyle (\Omega ,\;{\mathcal {F}},\;\mathbb {P} )}$ и ${\displaystyle \mathbb {P} ^{X}}$ — вероятностная мера, задающая распределение некоторой случайной величины ${\displaystyle X}$. Пусть фиксировано ${\displaystyle \alpha \in (0,\;1)}$. Тогда ${\displaystyle \alpha }$ -квантилем или квантилем уровня ${\displaystyle \alpha }$ распределения ${\displaystyle \mathbb {P} ^{X}}$ называется число ${\displaystyle x_{\alpha }\in \mathbb {R} }$, такое что
 
-${\displaystyle \mathbb {P} (X\leqslant x_{\alpha })\leqslant \alpha }, \\
-{\displaystyle \mathbb {P} (X\geqslant x_{\alpha })\geqslant 1-\alpha .}$
+$${\displaystyle \mathbb {P} (X\leqslant x_{\alpha })\leqslant \alpha }, \\
+{\displaystyle \mathbb {P} (X\geqslant x_{\alpha })\geqslant 1-\alpha .}$$
 В некоторых источниках (например, в англоязычной литературе) ${\displaystyle k}$-м ${\displaystyle q}$-квантилем называется квантиль уровня ${\displaystyle k/q}$, то есть ${\displaystyle (k/q)}$-квантиль в предыдущих обозначениях.
 
 * Выборочная медиана
