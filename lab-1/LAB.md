@@ -52,7 +52,7 @@ if __name__ == '__main__':
     Z = round(list(scipy.stats.norm.interval(0.95))[1], 2)
     print(Z)
     # находим объем выборки по формуле
-    n = math.ceil(((Z**2)*p*q)/(e**2))
+    n = math.ceil(((Z ** 2) * param * (1 - param)) / (e ** 2))
     # выводим объем выборки
     print(n)
 
@@ -100,7 +100,8 @@ if __name__ == '__main__':
 
 __Вывод в косоль__
 ```
-1825
+1.96
+8537
 [[False False False ... False False False]
  [False False False ... False False False]
  [False False False ... False False False]
@@ -109,14 +110,14 @@ __Вывод в косоль__
  [False False False ... False False False]
  [False False False ... False False False]]
 
-[[False  True  True ... False  True  True]
- [False  True  True ... False  True  True]
- [False False  True ...  True False False]
- ...
- [ True  True False ...  True False False]
+[[False  True False ...  True False False]
  [ True  True  True ...  True  True  True]
- [ True  True False ... False  True  True]]
-168
+ [ True  True  True ...  True  True  True]
+ ...
+ [False False False ... False  True  True]
+ [ True  True  True ... False  True  True]
+ [ True  True False ...  True  True  True]]
+30
 ```
 
 __Гистограмма__
