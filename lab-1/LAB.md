@@ -447,7 +447,7 @@ $$[X_i \leq x ] = {\begin{equation*} \Bigl\{ \begin{aligned}
 
 1. Несмещенноость: $E(\hat{F_n}(x)) = F_X(x)$
 
-2. Состоятельность: $\plim_{n \rightarrow \infty} \hat{F_n}(x) = F_X(x)$
+2. Состоятельность: $\lim_{n \rightarrow \infty} \hat{F_n}(x) = F_X(x)$
 
 3. Ассимптотическая нормальность: $\hat{F_n}(x) \sim N(F_X(x), {{F_X(x)\cdot(1-F_X(x))}\over{n}})$
 
