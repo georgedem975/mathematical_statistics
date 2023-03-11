@@ -414,11 +414,11 @@ ___Ключевые понятия___
 
 <tex>$$ Z_n = \sqrt{n} \cdot {{\overline{X_n} - \mu } \over { \sigma } } $$<tex>
 
-Тогда для любого $ x \in R $ мы имеем:
+Тогда для любого $x \in R$ мы имеем:
 
 <tex>$$ \lim_{n \rightarrow \infty} G_n(x) = \int_{- \infty}^x {{1} \over {\sqrt{2\pi}}} \cdot \exp({{y^2} \over {2}})dy, $$<tex>
 
-То есть $Z_n$ сходится к n(0, 1) по распределению:
+То есть $Z_n$ сходится к $n(0, 1)$ по распределению:
 
 <tex>$$ \sqrt{n} \cdot {{\overline{X_n} - \mu} \over {\sigma}} \rightarrow n(0, 1). $$<tex>
 
@@ -455,11 +455,11 @@ $$[X_i \leq x ] = {\begin{equation*} \Bigl\{ \begin{aligned}
 
 Выборочное (эмпирическое) среднее - это приближение теоритического среднего распределения, основанное на выборке из него.
 
-Определение: Пусть $X_1, ..., X_n$ - выборка из распределения вероятности, определенная на некотором вероятностном пространстве. Тогда ее выборочным средним называется случайная величина: $$ \overline{X} = {{1}\over{n}}\sum_{i=1}^n X_i$$
+Определение: Пусть $X_1, ..., X_n$ - выборка из распределения вероятности, определенная на некотором вероятностном пространстве. Тогда ее выборочным средним называется случайная величина: $$\overline{X} = {{1}\over{n}}\sum_{i=1}^n X_i$$
 
 Выборочное среднее - несмещенная оценка теоретического среднего: $$E[\overline{X}] = E[X_i], i = 1, ..., n$$
 
-Выборочное среднее - сильно состоятельная оценка теоритического среднего: $$\overline{X} \rightarrow E[X_i], n \rightarrow \infty $$
+Выборочное среднее - сильно состоятельная оценка теоритического среднего: $$\overline{X} \rightarrow E[X_i], n \rightarrow \infty$$
 
 Выборочное среднее - ассимптотически нормальная оценка. Пусть дисперсия случайных величин $X_i$ конечна и ненулевая, то есть $D[X_i] = \sigma^2 < \infty, \sigma^2 \ne 0, i = 1, ..., n$
 
@@ -479,7 +479,7 @@ $$[X_i \leq x ] = {\begin{equation*} \Bigl\{ \begin{aligned}
 
 2. несмещенная (исправленная) дисперсия - это случайная величина:
 
-<tex>$$S^2 = {{1}\over{n - 1}} \sum_{i=1}^n (X_i - \overline{X})^2 $$<tex>
+<tex>$$S^2 = {{1}\over{n - 1}} \sum_{i=1}^n (X_i - \overline{X})^2$$<tex>
 
 * Теоретическая (в том числе непрерывный случай) и выборочная квантили
 
@@ -489,8 +489,8 @@ $$[X_i \leq x ] = {\begin{equation*} \Bigl\{ \begin{aligned}
 
 Рассмотрим вероятностное пространство ${\displaystyle (\Omega ,\;{\mathcal {F}},\;\mathbb {P} )}$ и ${\displaystyle \mathbb {P} ^{X}}$ — вероятностная мера, задающая распределение некоторой случайной величины ${\displaystyle X}$. Пусть фиксировано ${\displaystyle \alpha \in (0,\;1)}$. Тогда ${\displaystyle \alpha }$ -квантилем или квантилем уровня ${\displaystyle \alpha }$ распределения ${\displaystyle \mathbb {P} ^{X}}$ называется число ${\displaystyle x_{\alpha }\in \mathbb {R} }$, такое что
 
-<tex>$$ {\displaystyle \mathbb {P} (X\leqslant x_{\alpha })\leqslant \alpha }, \\
-{\displaystyle \mathbb {P} (X\geqslant x_{\alpha })\geqslant 1-\alpha .}$$ <tex>
+<tex>$${\displaystyle \mathbb {P} (X\leqslant x_{\alpha })\leqslant \alpha }, \\
+{\displaystyle \mathbb {P} (X\geqslant x_{\alpha })\geqslant 1-\alpha .}$$<tex>
 
 В некоторых источниках (например, в англоязычной литературе) ${\displaystyle k}$-м ${\displaystyle q}$-квантилем называется квантиль уровня ${\displaystyle k/q}$, то есть ${\displaystyle (k/q)}$-квантиль в предыдущих обозначениях.
 
