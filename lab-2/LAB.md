@@ -100,7 +100,7 @@ def mse(theta_0, x):
     return var(theta_0, x) + bias(theta_0, x)**2
 ```
 
-__Код для решение основного задания__
+__Код для решения основного задания__
 ```python
 theta = 5
 count_samples = 500
@@ -137,6 +137,64 @@ __Постановка задачи:__
 если $k \in N - $известный параметр. Какимим свойствами обладает данная оценка? Эксперимент при $\theta = 2, k = 3$.
 
 __Решение:__
+
+
+для нахождения оценки параметра $\theta$ с помощью метода моментов, нужно приравнять теоретический момент порядка $r$ (существующий в распределении) и его выборочный аналог на основе выборки $X_1, X_2, ..., X_n$ порядка $r$.
+
+<tex>$$E(X^r) = \int_{0}^{\infty} x^r f_{\theta}(x) dx$$<tex>
+
+заметим, что данная плотность соответствует гамма распределению, следовательно
+
+<tex>$$E(X) = k\theta, \ \ E(X^2) = (k+1)k\theta^2$$<tex>
+
+для 1 и 2 моментов:
+
+<tex>$$\overline{X} = E(X) = k\theta$$<tex>
+
+<tex>$${{1}\over{n}} \sum_{i=1}^{n} X_i^2 = E(X^2) = (k+1)k\theta^2$$<tex>
+
+следовательно:
+
+<tex>$$\theta = {{\overline{X}}\over{k}}$$<tex>
+
+свойства:
+1. несмещенность
+2. состоятельность
+3. эффективность
+4. асимптотическая нормальность
+
+__Код для решения основного задания__
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+theta_0 = 2
+k = 3
+
+values = [50, 100, 500, 1000, 2500]
+
+e = 0.01
+
+res = []
+
+for n in values:
+    dev_count = 0
+    for i in range(500):
+        X = np.random.gamma(k, theta_0, size=n)
+        theta_overline = np.mean(X) / k
+        if abs(theta_overline - theta_0) > e:
+            dev_count += 1
+
+    res.append(dev_count)
+
+
+plt.plot(values, res, 'bo-')
+plt.xlabel('Размер выборки')
+plt.ylabel('Количество отклонений')
+plt.title('Отклонения оценки от истинного значения')
+plt.show()
+```
 
 ---
 
