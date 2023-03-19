@@ -4,7 +4,7 @@
 
 [лабораторная №1](https://github.com/georgedem975/mathematical_statistics/blob/master/lab-1/LAB.md)
 
-[лабораторная №2]()
+[лабораторная №2](https://github.com/georgedem975/mathematical_statistics/blob/master/lab-2/LAB.md)
 
 [лабораторная №3]()
 
