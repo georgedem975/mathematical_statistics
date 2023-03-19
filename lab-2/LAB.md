@@ -32,7 +32,7 @@ __Решение:__
 
 <tex>$$\Bigl(-{{1}\over{2}}\Bigr)^n\cdot\Bigl(\sum_{i=1}^n2(\theta - x_i^3)\Bigr) = 0,$$<tex>
 
-так как $\Bigl(-{{1}\over{2}}\Bigr)^n \neq 0 \Longrightarrow \sum_{i=1}^n2(\theta - x_i^3) = 0 \Longrightarrow \theta = \overline{X}^3$ 
+так как $\Bigl(-{{1}\over{2}}\Bigr)^n \neq 0 \Longrightarrow \sum\nolimits_{i=1}^n2(\theta - x_i^3) = 0 \Longrightarrow \theta = \overline{X}^3$ 
 
 __найдем смещение__
 
