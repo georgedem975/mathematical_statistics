@@ -54,6 +54,15 @@ __найдем смещение__
 
 <tex>$$E[\overline{x}^3]−θ_0$$<tex>
 
+код:
+```python
+def bias(theta_0, x):
+    func = lambda x, theta: 3 * x ** 2 / np.sqrt(2 * np.pi) * np.exp(-0.5 * (theta - x ** 3) ** 2)
+    int = lambda x: x ** 3 * func(x, theta_0)
+    result = quad(int, -np.inf, np.inf)[0]
+    return result - theta_0
+```
+
 __найдем дисперсию__
 
 формула для нахождения дисперсии
@@ -68,6 +77,13 @@ __найдем дисперсию__
 
 <tex>$$E[\hat\theta^2] = \int_{-\infty}^{\infty}\hat\theta^2 f_{\theta_0}(x) dx$$<tex>
 
+код:
+```python
+def var(theta_0, x):
+    b = bias(theta_0**2, x)
+    return b - bias(theta_0, x)**2
+```
+
 __найдем среднеквадратическую ошибку__
 
 <tex>$$MSE(\hat\theta) = E[(\hat\theta - \theta_0)^2] = E[\hat\theta^2 - 2\hat\theta\theta_0 + \theta_0^2] = $$<tex>
@@ -77,6 +93,38 @@ __найдем среднеквадратическую ошибку__
 <tex>$$Var(\hat\theta) + (E[\hat\theta]-\theta)^2 = Var(\hat\theta) + Bias(\hat\theta)^2$$<tex>
 
 дисперсия и смещение у нас есть
+
+код:
+```python
+def mse(theta_0, x):
+    return var(theta_0, x) + bias(theta_0, x)**2
+```
+
+__Код для решение основного задания__
+```python
+theta = 5
+count_samples = 500
+sample_sizes = [50, 100, 500, 1000, 2500]
+
+
+dev = []
+
+for sample_size in sample_sizes:
+    count = 0
+    for i in range(count_samples):
+        sample = np.random.normal(loc=theta, size=sample_size)
+        mean_sample = np.mean(sample)
+        if np.abs(mean_sample - theta) > 0.01:
+            count += 1
+    dev.append(count)
+
+
+plt.plot(sample_sizes, dev, 'o-')
+plt.xlabel('размер выборки')
+plt.ylabel('количество отклонений')
+plt.title('график отклонений для е=0.01)')
+plt.show()
+```
 
 ### Задание №6
 
@@ -92,6 +140,16 @@ __Решение:__
 
 ---
 
+__Примечание__
+используемые библиотеки:
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import quad
+```
+
+---
+
 ### Ключевые понятия:
 
 + __Постановка задачи точечного оценивания параметров__
@@ -103,4 +161,3 @@ __Решение:__
 + __Метод моментов__
 
 + __Метод максимального правдоподобия__
-
