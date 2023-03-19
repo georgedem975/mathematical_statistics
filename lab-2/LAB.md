@@ -18,13 +18,13 @@ __Решение:__
 
 <tex>$$\prod_{i=1}^n = {{3x_1^2\cdot3x_2^2\cdot...\cdot3x_n^2}\over{\sqrt{2\pi}\cdot \sqrt{2\pi}\cdot...\cdot\sqrt{2\pi}}} \cdot \exp \Biggl(\Biggl(-{{(\theta - x_1^3)^2}\over{2}}\Biggr)\cdot\Biggl(-{{(\theta - x_2^3)^2}\over{2}}\Biggr)\cdot...\cdot\Biggl(-{{(\theta - x_n^3)^2}\over{2}}\Biggr)\Biggr)=$$<tex>
 
-<tex>$$={{3^n\cdot\prod_{i=1}^n x_i^2}\over{(2\pi)^{{n}\over{2}}}}\cdot\exp\Biggl(\Biggl(-{{1}\over{2}}\Biggr)^n\cdot\prod_{i=1}^n(\theta-x_i^3)^2\Biggr)=\ln\Biggl({{3^n\cdot\sum_{i=1}^n x_i^2}\over{(2\pi)^{{n}\over{2}}}}\cdot\exp\Biggl(\Biggl(-{{1}\over{2}}\Biggr)^n\cdot\sum_{i=1}^n(\theta-x_i^3)^2\Biggr)\Biggr)=$$<tex>
+<tex>$$={{3^n\cdot\prod\nolimits_{i=1}^n x_i^2}\over{(2\pi)^{{n}\over{2}}}}\cdot\exp\Biggl(\Biggl(-{{1}\over{2}}\Biggr)^n\cdot\prod_{i=1}^n(\theta-x_i^3)^2\Biggr)=\ln\Biggl({{3^n\cdot\sum\nolimits_{i=1}^n x_i^2}\over{(2\pi)^{{n}\over{2}}}}\cdot\exp\Biggl(\Biggl(-{{1}\over{2}}\Biggr)^n\cdot\sum_{i=1}^n(\theta-x_i^3)^2\Biggr)\Biggr)=$$<tex>
 
 <tex>$$=\ln3^n+\ln\sum_{i=1}^nx_i^2-{{n}\over{2}}\ln(2\pi)+\Bigl(-{{1}\over{2}}\Bigr)^n\cdot\sum_{i=1}^n(\theta - x_i^3)^2=$$<tex>
 
 оценка максимального правдоподобия
 
-<tex>$${{\mathrm{d}(\ln3^n+2\ln\sum_{i=1}^nx_i-{{n}\over{2}}\ln(2\pi)+\Bigl(-{{1}\over{2}}\Bigr)^n\cdot\sum_{i=1}^n(\theta - x_i^3)^2)}\over{\mathrm{d}\theta}}=$$<tex>
+<tex>$${{\mathrm{d}(\ln3^n+2\ln\sum\nolimits_{i=1}^nx_i-{{n}\over{2}}\ln(2\pi)+\Bigl(-{{1}\over{2}}\Bigr)^n\cdot\sum\nolimits_{i=1}^n(\theta - x_i^3)^2)}\over{\mathrm{d}\theta}}=$$<tex>
 
 <tex>$$=\Bigl(-{{1}\over{2}}\Bigr)^n\cdot\Bigl(\sum_{i=1}^n(\theta - x_i^3)^2\Bigr)_\theta'=\Bigl(-{{1}\over{2}}\Bigr)^n\cdot\Bigl(\sum_{i=1}^n2(\theta - x_i^3)\Bigr)$$<tex>
 
@@ -65,7 +65,7 @@ __Постановка задачи:__
 
 <tex>$$f_{\theta}(x)={{1}\over{(k-1)!\theta^k}}x^{k-1}e^{-x/\theta}\mathbb{1}(x > 0),$$<tex>
 
-если $k \in \N - $известный параметр. Какимим свойствами обладает данная оценка? Эксперимент при $\theta = 2, k = 3$.
+если $k \in N - $известный параметр. Какимим свойствами обладает данная оценка? Эксперимент при $\theta = 2, k = 3$.
 
 __Решение:__
 
