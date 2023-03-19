@@ -126,6 +126,8 @@ plt.title('график отклонений для е=0.01)')
 plt.show()
 ```
 
+![1](https://github.com/georgedem975/mathematical_statistics/blob/master/lab-2/assets/Figure_1.png)
+
 ### Задание №6
 
 __Постановка задачи:__
@@ -195,6 +197,8 @@ plt.ylabel('Количество отклонений')
 plt.title('Отклонения оценки от истинного значения')
 plt.show()
 ```
+
+![2](https://github.com/georgedem975/mathematical_statistics/blob/master/lab-2/assets/Figure_2.png)
 
 ---
 
