@@ -8,6 +8,6 @@
 
 [лабораторная №3](https://github.com/georgedem975/mathematical_statistics/blob/master/lab-3/LAB.md)
 
-[лабораторная №4]()
+[лабораторная №4](https://github.com/georgedem975/mathematical_statistics/blob/master/lab-4/LAB.md)
 
 [лабораторная №5]()
