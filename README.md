@@ -10,4 +10,4 @@
 
 [лабораторная №4](https://github.com/georgedem975/mathematical_statistics/blob/master/lab-4/LAB.md)
 
-[лабораторная №5]()
+[лабораторная №5](https://github.com/georgedem975/mathematical_statistics/blob/master/lab-5/LAB.md)
