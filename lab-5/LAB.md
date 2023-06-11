@@ -29,6 +29,7 @@
 ```python
 import pandas as pd
 import numpy as np
+from scipy import stats
 ```
 
 Далее, считаемм данные с файла:
@@ -120,17 +121,21 @@ print('Коэффициент детерминации:', r_squared)
 
 Проверим гипотезы:
 ```python
-if coefficients[0] > 0:
+_, p_value_first = stats.ttest_ind(X['How_Many_Sold'], y)
+
+_, p_value_second = stats.ttest_ind(X['Current_Price'], y)
+
+if p_value_first < 0.05:
     print('Гипотеза "Чем больше продажи, тем больше рейтинг" подтверждается')
 else:
     print('Гипотеза "Чем больше продажи, тем больше рейтинг" не подтверждается')
 
-if coefficients[1] > 0:
+if p_value_second < 0.05:
     print('Гипотеза "Рейтинг зависит от цены" подтверждается')
 else:
     print('Гипотеза "Рейтинг зависит от цены" не подтверждается')
 
-if coefficients[0] > 0 and coefficients[1] > 0:
+if p_value_first < 0.05 and p_value_second < 0.05:
     print('Гипотеза "Рейтинг зависит и от цены, и от количества проданных экземпляров" подтверждается')
 else:
     print('Гипотеза "Рейтинг зависит и от цены, и от количества проданных экземпляров" не подтверждается')
